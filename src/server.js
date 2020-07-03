@@ -160,7 +160,7 @@
 // })
 
 const http = require('http')
-const port = 3000
+const port = process.env.PORT | 3000
 
 const server = http.createServer((request, response) => {
   console.log(request.url)
